@@ -218,3 +218,13 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ---- Project-specific rules ----
+# Secrets: GitHub tokens and keys must never be committed
+*.token
+*.pem
+*.key
+secrets/
+
+# Scratch output - only final, reviewed evidence is committed
+scratch/
