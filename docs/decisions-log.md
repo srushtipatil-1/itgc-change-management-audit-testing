@@ -1,0 +1,27 @@
+# Audit Decisions Log — Control CM-01
+
+Key judgements made during the engagement, with the reasoning behind each.
+
+| ID | Date | Decision | Reasoning |
+| --- | --- | --- | --- |
+| D-01 | 12 Oct 2026 | Audit period set to Q3 2026 (1 July – 30 September) | Most recent completed quarter, so the population is final and cannot change. |
+| D-02 | 12 Oct 2026 | Prowler and Trivy selected; Flask excluded | See scoping memo. Flask had only 3 merged PRs, below the minimum of 50. |
+| D-03 | 12 Oct 2026 | Bot-authored changes kept in scope; each must have at least one approval from a human reviewer before merge | Automated dependency updates are a known software supply-chain attack path. Excluding them would leave a blind spot. Bot results will also be reported separately. |
+| D-04 | 12 Oct 2026 | Population accepted as complete and accurate | Extraction script confirmed counts match GitHub (734 and 133), no duplicates, and all merges within the period. File fingerprints recorded in `evidence/population/extraction-log.json`. |
+
+## Population summary
+
+| Repository | Total merged changes | Human-authored | Bot-authored |
+| --- | --- | --- | --- |
+| prowler-cloud/prowler | 734 | 715 | 19 |
+| aquasecurity/trivy | 133 | 101 | 32 |
+| **Total** | **867** | **816** | **51** |
+
+## Items to follow up during testing
+
+| Ref | Repository | Item | Why it matters |
+| --- | --- | --- | --- |
+| F-01 | Prowler | Some merged PRs show "Changes requested" or "Review required" in the PR list (e.g. #12915, #12914, #12911) | May indicate merges without a valid approval |
+| F-02 | Trivy | PR #10912 changes who may approve Chart.yaml updates | A change to the approval rules is itself a high-risk change and needs strong review |
+| F-03 | Trivy | PR #10931 refers to bypassing the merge queue rule | Any bypass of a control needs a documented justification |
+| F-04 | Trivy | Some PRs were authored and merged by the same person (e.g. #10970, #10974) | Acceptable only if a different person approved before merge |
