@@ -1,0 +1,32 @@
+{
+  "extracted_at_utc": "2026-10-12T17:42:26Z",
+  "period": "2026-07-01 to 2026-09-30",
+  "repositories": [
+    {
+      "repository": "prowler-cloud/prowler",
+      "reported_total": 734,
+      "records_saved": 734,
+      "bot_authored": 19,
+      "checks": {
+        "reported_total_matches_records": true,
+        "no_duplicate_prs": true,
+        "all_merged_within_period": true
+      },
+      "file": "evidence/population/prowler-cloud__prowler_population.csv",
+      "sha256": "8ffe26a9680a1ed9589b86e400bfa86011e27a8e106747cb50945d99fcb6e2eb"
+    },
+    {
+      "repository": "aquasecurity/trivy",
+      "reported_total": 133,
+      "records_saved": 133,
+      "bot_authored": 32,
+      "checks": {
+        "reported_total_matches_records": true,
+        "no_duplicate_prs": true,
+        "all_merged_within_period": true
+      },
+      "file": "evidence/population/aquasecurity__trivy_population.csv",
+      "sha256": "ac2d97f96ed47e74ff84b204bb9927626dff21aea5409464501a5ee617b5bca9"
+    }
+  ]
+}
