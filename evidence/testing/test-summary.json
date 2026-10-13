@@ -1,0 +1,49 @@
+{
+  "tested_at_utc": "2026-10-13T04:25:58Z",
+  "repositories": [
+    {
+      "repository": "aquasecurity/trivy",
+      "tested": 133,
+      "pass": 112,
+      "exceptions_to_analyse": 21,
+      "not_determinable": 0,
+      "attribute_failures": {
+        "A2": 0,
+        "A3": 0,
+        "A4": 2,
+        "A5": 19
+      },
+      "human_authored": {
+        "tested": 101,
+        "pass": 82
+      },
+      "bot_authored": {
+        "tested": 32,
+        "pass": 30
+      },
+      "file": "evidence/testing/aquasecurity__trivy_test_results.csv"
+    },
+    {
+      "repository": "prowler-cloud/prowler",
+      "tested": 734,
+      "pass": 177,
+      "exceptions_to_analyse": 557,
+      "not_determinable": 0,
+      "attribute_failures": {
+        "A2": 95,
+        "A3": 184,
+        "A4": 480,
+        "A5": 185
+      },
+      "human_authored": {
+        "tested": 715,
+        "pass": 176
+      },
+      "bot_authored": {
+        "tested": 19,
+        "pass": 1
+      },
+      "file": "evidence/testing/prowler-cloud__prowler_test_results.csv"
+    }
+  ]
+}
