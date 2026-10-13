@@ -1,0 +1,127 @@
+{
+  "decision": "D-07 informational patterns: ^codecov; changelog; conventional-commit; validate pr title; semantic; label",
+  "repositories": [
+    {
+      "repository": "aquasecurity/trivy",
+      "default_branch": "main",
+      "all_changes": {
+        "tested": 133,
+        "pass": 114,
+        "exceptions": 19,
+        "attribute_failures": {
+          "A2_no_approval": 0,
+          "A3_no_independent_human_approval": 0,
+          "A4_blocking_check_failed": 0,
+          "A5_changed_after_approval": 19
+        }
+      },
+      "default_branch_changes": {
+        "tested": 133,
+        "pass": 114,
+        "exceptions": 19,
+        "attribute_failures": {
+          "A2_no_approval": 0,
+          "A3_no_independent_human_approval": 0,
+          "A4_blocking_check_failed": 0,
+          "A5_changed_after_approval": 19
+        }
+      },
+      "release_or_other_branch_changes": {
+        "tested": 0,
+        "pass": 0,
+        "exceptions": 0,
+        "attribute_failures": {
+          "A2_no_approval": 0,
+          "A3_no_independent_human_approval": 0,
+          "A4_blocking_check_failed": 0,
+          "A5_changed_after_approval": 0
+        }
+      },
+      "human_authored": {
+        "tested": 101,
+        "pass": 84,
+        "exceptions": 17,
+        "attribute_failures": {
+          "A2_no_approval": 0,
+          "A3_no_independent_human_approval": 0,
+          "A4_blocking_check_failed": 0,
+          "A5_changed_after_approval": 17
+        }
+      },
+      "bot_authored": {
+        "tested": 32,
+        "pass": 30,
+        "exceptions": 2,
+        "attribute_failures": {
+          "A2_no_approval": 0,
+          "A3_no_independent_human_approval": 0,
+          "A4_blocking_check_failed": 0,
+          "A5_changed_after_approval": 2
+        }
+      },
+      "a4_moved_to_pass_after_refinement": 2,
+      "file": "evidence/testing/aquasecurity__trivy_test_results_refined.csv"
+    },
+    {
+      "repository": "prowler-cloud/prowler",
+      "default_branch": "master",
+      "all_changes": {
+        "tested": 734,
+        "pass": 438,
+        "exceptions": 296,
+        "attribute_failures": {
+          "A2_no_approval": 95,
+          "A3_no_independent_human_approval": 184,
+          "A4_blocking_check_failed": 174,
+          "A5_changed_after_approval": 185
+        }
+      },
+      "default_branch_changes": {
+        "tested": 553,
+        "pass": 349,
+        "exceptions": 204,
+        "attribute_failures": {
+          "A2_no_approval": 30,
+          "A3_no_independent_human_approval": 119,
+          "A4_blocking_check_failed": 132,
+          "A5_changed_after_approval": 120
+        }
+      },
+      "release_or_other_branch_changes": {
+        "tested": 181,
+        "pass": 89,
+        "exceptions": 92,
+        "attribute_failures": {
+          "A2_no_approval": 65,
+          "A3_no_independent_human_approval": 65,
+          "A4_blocking_check_failed": 42,
+          "A5_changed_after_approval": 65
+        }
+      },
+      "human_authored": {
+        "tested": 715,
+        "pass": 424,
+        "exceptions": 291,
+        "attribute_failures": {
+          "A2_no_approval": 92,
+          "A3_no_independent_human_approval": 181,
+          "A4_blocking_check_failed": 172,
+          "A5_changed_after_approval": 182
+        }
+      },
+      "bot_authored": {
+        "tested": 19,
+        "pass": 14,
+        "exceptions": 5,
+        "attribute_failures": {
+          "A2_no_approval": 3,
+          "A3_no_independent_human_approval": 3,
+          "A4_blocking_check_failed": 2,
+          "A5_changed_after_approval": 3
+        }
+      },
+      "a4_moved_to_pass_after_refinement": 306,
+      "file": "evidence/testing/prowler-cloud__prowler_test_results_refined.csv"
+    }
+  ]
+}
