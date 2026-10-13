@@ -1,0 +1,81 @@
+
+===== aquasecurity/trivy: 21 exceptions out of 133 =====
+
+Failed attributes (pattern -> count):
+  A5              19
+  A4              2
+
+Checks most often failing (A4):
+     2  Validate PR title
+
+Exceptions where ONLY A4 failed (approval was fine): 2
+
+Examples to inspect by hand (first 3 of each pattern):
+  [A5] PR 10452 by vaibhav-rf -> https://github.com/aquasecurity/trivy/pull/10452
+        notes: code changed after the last valid approval
+  [A5] PR 10553 by drawliin -> https://github.com/aquasecurity/trivy/pull/10553
+        notes: code changed after the last valid approval
+  [A5] PR 10932 by DmitriyLewen -> https://github.com/aquasecurity/trivy/pull/10932
+        notes: code changed after the last valid approval
+  [A4] PR 10984 by DmitriyLewen -> https://github.com/aquasecurity/trivy/pull/10984
+        notes: failing checks: Validate PR title
+  [A4] PR 11255 by luiacuaniello -> https://github.com/aquasecurity/trivy/pull/11255
+        notes: failing checks: Validate PR title
+
+===== prowler-cloud/prowler: 557 exceptions out of 734 =====
+
+Failed attributes (pattern -> count):
+  A4              372
+  A3+A4+A5        56
+  A2+A3+A4+A5     52
+  A2+A3+A5        43
+  A3+A5           33
+  A5              1
+
+Checks most often failing (A4):
+   183  test-changelog-attribution
+   175  codecov/project
+   153  check-compliance-mapping
+   144  e2e-tests
+   138  check-changelog
+    42  conventional-commit-check
+    37  codecov/patch
+    12  api-container-build-and-scan
+    11  release-freeze-gate
+     5  api-code-quality (3.12)
+
+Exceptions where ONLY A4 failed (approval was fine): 372
+
+Examples to inspect by hand (first 3 of each pattern):
+  [A4] PR 9517 by Synchx00 -> https://github.com/prowler-cloud/prowler/pull/9517
+        notes: failing checks: codecov/patch, codecov/project
+  [A4] PR 10582 by HugoPBrito -> https://github.com/prowler-cloud/prowler/pull/10582
+        notes: failing checks: codecov/project
+  [A4] PR 10657 by Legin-ML -> https://github.com/prowler-cloud/prowler/pull/10657
+        notes: failing checks: codecov/patch, codecov/project
+  [A2+A3+A4+A5] PR 11601 by renovate[bot] -> https://github.com/prowler-cloud/prowler/pull/11601
+        notes: no approval before merge; failing checks: conventional-commit-check
+  [A2+A3+A5] PR 11751 by pedrooot -> https://github.com/prowler-cloud/prowler/pull/11751
+        notes: no approval before merge
+  [A3+A5] PR 11763 by cesararroba -> https://github.com/prowler-cloud/prowler/pull/11763
+        notes: only approvals were by the author or a bot
+  [A3+A5] PR 11788 by cesararroba -> https://github.com/prowler-cloud/prowler/pull/11788
+        notes: only approvals were by the author or a bot
+  [A3+A5] PR 11789 by cesararroba -> https://github.com/prowler-cloud/prowler/pull/11789
+        notes: only approvals were by the author or a bot
+  [A2+A3+A5] PR 11806 by prowler-bot -> https://github.com/prowler-cloud/prowler/pull/11806
+        notes: no approval before merge
+  [A2+A3+A4+A5] PR 11819 by prowler-bot -> https://github.com/prowler-cloud/prowler/pull/11819
+        notes: no approval before merge; failing checks: check-compliance-mapping, sdk-tests (3.10), sdk-tests (3.11), sdk-tests (3.12)
+  [A3+A4+A5] PR 11820 by prowler-bot -> https://github.com/prowler-cloud/prowler/pull/11820
+        notes: only approvals were by the author or a bot; failing checks: codecov/project
+  [A2+A3+A4+A5] PR 11858 by prowler-bot -> https://github.com/prowler-cloud/prowler/pull/11858
+        notes: no approval before merge; failing checks: codecov/project
+  [A3+A4+A5] PR 11874 by prowler-bot -> https://github.com/prowler-cloud/prowler/pull/11874
+        notes: only approvals were by the author or a bot; failing checks: check-compliance-mapping
+  [A3+A4+A5] PR 11916 by cesararroba -> https://github.com/prowler-cloud/prowler/pull/11916
+        notes: only approvals were by the author or a bot; failing checks: conventional-commit-check
+  [A2+A3+A5] PR 11937 by stepsecurity-app[bot] -> https://github.com/prowler-cloud/prowler/pull/11937
+        notes: no approval before merge
+  [A5] PR 12521 by HugoPBrito -> https://github.com/prowler-cloud/prowler/pull/12521
+        notes: code changed after the last valid approval
