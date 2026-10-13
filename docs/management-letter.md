@@ -30,7 +30,7 @@ This letter summarises our observations, the associated risks and our recommenda
 
 ### Observation 1 — Changes merged without approval (Prowler) — High
 
-**Observation.** 95 of 734 changes (12.9%) were merged with no approving review. The rate was markedly higher on release branches: 65 of 181 release-branch changes (35.9%), compared with 30 of 553 default-branch changes (5.4%). Example: PR #11806, an automated dependency update for release 5.32.0, was merged into branch v5.32 with no reviews recorded, although 47 automated checks passed.
+**Observation.** 95 of 734 changes (12.9%) were merged with no approving review. The rate was markedly higher on release branches: 34 of 146 release-branch changes (23.3%), compared with 30 of 553 default-branch changes (5.4%). A further 31 of 35 changes merged into feature and integration branches had no approval. Example: PR #11806, an automated dependency update for release 5.32.0, was merged into branch v5.32 with no reviews recorded, although 47 automated checks passed.
 
 **Criteria.** Control CM-01; SOC 2 CC8.1 (changes are authorised before implementation); ISO/IEC 27001:2022 A.8.32 (change management).
 
