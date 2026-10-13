@@ -21,7 +21,9 @@ Key judgements made during the engagement, with the reasoning behind each.
 | aquasecurity/trivy | 133 | 101 | 32 |
 | **Total** | **867** | **816** | 
 
-**Note: counts use GitHub's account type. prowler-bot (173 changes) is registered as a user account, so it is counted as human-authored here.51** |
+| **Total** | **867** | **816** | **51** |
+
+Note: counts use GitHub's account type. prowler-bot (173 changes) is registered as a user account, so it is counted as human-authored here.
 
 
 ## Items to follow up during testing
