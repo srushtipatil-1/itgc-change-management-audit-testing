@@ -8,6 +8,8 @@ Key judgements made during the engagement, with the reasoning behind each.
 | D-02 | 12 Oct 2026 | Prowler and Trivy selected; Flask excluded | See scoping memo. Flask had only 3 merged PRs, below the minimum of 50. |
 | D-03 | 12 Oct 2026 | Bot-authored changes kept in scope; each must have at least one approval from a human reviewer before merge | Automated dependency updates are a known software supply-chain attack path. Excluding them would leave a blind spot. Bot results will also be reported separately. |
 | D-04 | 12 Oct 2026 | Population accepted as complete and accurate | Extraction script confirmed counts match GitHub (734 and 133), no duplicates, and all merges within the period. File fingerprints recorded in `evidence/population/extraction-log.json`. |
+| D-05 | 13 Oct 2026 | Scope extended to include merges into release branches (e.g. v5.32), not only the default branch | Found during testing (PR #11806). Release branches ship directly to users, so their changes are higher risk. Results will show default-branch and release-branch changes separately. |
+| D-06 | 13 Oct 2026 | Approvals by AI review bots (e.g. coderabbitai[bot]) do not satisfy A3 | Consistent with D-03: an accountable human reviewer is required. AI review is treated as a supporting control, not an approval. |
 
 ## Population summary
 
