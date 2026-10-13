@@ -228,3 +228,4 @@ secrets/
 
 # Scratch output - only final, reviewed evidence is committed
 scratch/
+~$*
