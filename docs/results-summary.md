@@ -36,7 +36,10 @@ Note: a change with no valid approval also fails "no change after approval"; the
 | Branch type | Changes | Exceptions | Merged with no approval |
 | --- | --- | --- | --- |
 | Default branch (master) | 553 | 204 (36.9%) | 30 (5.4%) |
-| Release branches | 181 | 92 (50.8%) | 65 (35.9%) |
+| Release branches (v5.x) | 146 | 61 (41.8%) | 34 (23.3%) |
+| Feature / integration branches | 35 | 31 (88.6%) | 31 (88.6%) |
+
+Note: feature and integration branches are work-in-progress branches that are usually reviewed again when merged into the main branch, so they are shown separately (decision D-08).
 
 ## 4. Key findings
 
@@ -58,3 +61,4 @@ Note: a change with no valid approval also fails "no change after approval"; the
 - Public data does not show branch-protection settings, required checks or administrator bypasses. Checks not classified as informational were treated as blocking (conservative), so F3 may be overstated.
 - The projects are not bound by control CM-01; results compare their public change records with an illustrative control and are not findings of non-compliance.
 - Manual validation covered 4 items; results rely on the GitHub API's accuracy.
+- Bot detection used GitHub's account type, so service accounts registered as users (e.g. prowler-bot) were counted as human-authored.
