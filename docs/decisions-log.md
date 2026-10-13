@@ -10,6 +10,7 @@ Key judgements made during the engagement, with the reasoning behind each.
 | D-04 | 12 Oct 2026 | Population accepted as complete and accurate | Extraction script confirmed counts match GitHub (734 and 133), no duplicates, and all merges within the period. File fingerprints recorded in `evidence/population/extraction-log.json`. |
 | D-05 | 13 Oct 2026 | Scope extended to include merges into release branches (e.g. v5.32), not only the default branch | Found during testing (PR #11806). Release branches ship directly to users, so their changes are higher risk. Results will show default-branch and release-branch changes separately. |
 | D-06 | 13 Oct 2026 | Approvals by AI review bots (e.g. coderabbitai[bot]) do not satisfy A3 | Consistent with D-03: an accountable human reviewer is required. AI review is treated as a supporting control, not an approval. |
+| D-07 | 13 Oct 2026 | A4 refined: only blocking checks count as failures. Informational checks (coverage reports, changelog reminders, PR title format, labelling) are excluded; cancelled runs are not counted as failures | The first run flagged 76% of Prowler changes, mostly due to informational checks that do not test functionality or security. Any check not explicitly classified as informational is treated as blocking (conservative approach). Raw results are retained alongside refined results. |
 
 ## Population summary
 
