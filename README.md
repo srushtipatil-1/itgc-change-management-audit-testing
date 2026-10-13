@@ -16,7 +16,7 @@ Independent IT general controls (ITGC) test of the **change-management control**
 | Conclusion | Effective with exceptions | Not effective | — |
 
 **Notable findings**
-- **Release branches had the weakest control:** 35.9% of Prowler release-branch changes were merged with no approval, versus 5.4% on the default branch.
+- **Release branches had the weakest control:** 23.3% of Prowler release-branch changes (34 of 146) were merged with no approval, versus 5.4% on the default branch — more than four times higher.
 - **AI reviewer approvals replaced human review:** 89 Prowler changes were approved only by a bot, including an AI code-review tool approving a CI workflow change.
 - **Code changed after approval:** 19 Trivy changes were modified after approval without re-approval.
 - **Strength:** Trivy required an independent human approval for 100% of changes, including all 32 bot-authored updates.
@@ -96,6 +96,8 @@ python scripts\refine_a4.py
 - Public data does not show branch-protection settings, required checks or administrator bypasses; unclassified checks were treated as blocking, so check-failure counts may be overstated.
 - No interviews with maintainers; management responses were not obtained.
 - Scripts were developed with AI assistance; the test design, judgements and validation are the author's.
+- Bot detection used GitHub's account type. Service accounts registered as normal users (e.g. prowler-bot, 173 changes) were counted as human-authored. Overall pass and exception totals are not affected.
+- Release-branch figures were corrected on 13 Oct 2026 after review: feature and integration branches had been grouped with release branches (see decision D-08).
 
 ## Author
 
